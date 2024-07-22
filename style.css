@@ -5,10 +5,12 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  scroll-behavior: smooth;
 }
 
 a {
   text-decoration: none;
+  display: inline-flex;
 }
 
 img {
@@ -43,20 +45,21 @@ li a {
 }
 
 li a:hover {
-  font-size: 1.05rem;
-  text-decoration: underline;
+  font-size: 1.01rem;
+  color: #633569;
+  font-weight: 400;
 }
 
-.banner{
-    position: relative;
-    z-index: 1;
+.banner {
+  position: relative;
+  z-index: 1;
 }
 
 #about {
   /* background-color: #f0d7c2; */
   /* background-color: #ffedce; */
   background-color: #fcf6fc;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   position: relative;
 }
 
@@ -76,43 +79,60 @@ li a:hover {
   color: #2d272b;
 }
 
-#detalhe1{
-    width: 350px;
-    position: absolute;
-    top: -100px;
-    left: -200px;
-    filter: drop-shadow(2px 2px 2px #0000009d );
+#detalhe1 {
+  width: 350px;
+  position: absolute;
+  top: -100px;
+  left: -200px;
+  filter: drop-shadow(2px 2px 2px #0000009d);
 }
 
-#detalhe2{
-    width: 100px;
-    position: absolute;
-    top: 70px;
-    right: 0px;
-    filter: drop-shadow(2px 2px 2px #0000009d );
+#detalhe2 {
+  width: 100px;
+  position: absolute;
+  top: 150px;
+  right: 0px;
+  filter: drop-shadow(2px 2px 2px #0000009d);
 }
 
-.about-button{
-    display: inline-block;
-    padding: 13px 78px;
-    color: #fcf6fc;
-    background-color: #633569;
-    border-radius: 4px;
-    margin: 20px 550px;
-    border: 2px solid #633569;
+.center {
+  display: flex;
+  justify-content: center;
+}
+.about-button {
+  display: inline-block;
+  padding: 13px 78px;
+  color: #fcf6fc;
+  background-color: #633569;
+  border-radius: 4px;
+  margin: 20px 0px;
+  border: 2px solid #633569;
 }
 
-.about-button:hover{
-    border-color: #94808c;
-
-}
-.contact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.about-button:hover {
+  border-color: #94808c;
 }
 
-.contact-border{
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
+.fa-angle-up{
+    background-color: #fff;
+    border: 2px solid #4a274e;
+    border-radius: 50%;
+    padding: 5px 6px;
+    color: #633569;
+    font-size: 1.5rem;
+    
+}
+
+#toTop{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
 }

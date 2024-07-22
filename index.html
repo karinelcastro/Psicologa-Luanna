@@ -13,7 +13,7 @@
 <body>
     <header id="home">
         <div class="menu">
-            <img class="logo" src="img/logo-horizontal-removebg.png" alt="Luanna Pires Psicóloga">
+            <a href="https://www.instagram.com/psicologa.luanna/" target="_blank"><img class="logo" src="img/logo-horizontal-removebg.png" alt="Luanna Pires Psicóloga"></a>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -29,9 +29,14 @@
         <section id="about">
             <img src="img/detalhe.png" id="detalhe1">
             <h2>Construindo vidas valorosas, vidas que valem a pena viver!</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, qui beatae minima molestias recusandae id! Eligendi ipsum consectetur iste <br>in natus maxime cum vero accusantium error ut voluptas veniam repellat non molestiae ab unde, assumenda est, necessitatibus cupiditate repellendus molestias, porro architecto commodi iusto? Ullam, in nihil ducimus vero veniam, ex dolor quasi et cupiditate, tempore excepturi quo <br>assumenda consequatur?</p>
+            <p>“Ao psicólogo não é dado o martelo dos juízes, as prerrogativas dos promotores, nem o bisturi dos cirurgiões. Somos pequenos clínicos da alma, engenheiros de manutenção da psique, pequenos o bastante para não sermos protagonistas nem julgadores da vida alheia.</p>
+            <p>Somos guardiões das maiores capacidades humanas, muitas vezes escondidas por transtornos dos mais diversos. Nosso trabalho é de longo prazo. Ser psicólogo não é um status profissional, é uma constante descoberta de si mesmo e do outro, de tantos outros, não é um lugar ao qual chegamos, mas um caminho pelo qual trilhamos, de estudos e descobertas constantes. É poder visitar diariamente universos diferentes, maravilhando-se sempre com a novidade das infinitas possibilidades humanas.</p>
+            <p>Ser psicólogo não é passar o dia ouvindo problemas, mas sim presenciar o desbravamento de caminhos inimagináveis e poder contemplar o sorriso depois das lágrimas, é vislumbrar a mais verdadeira e honesta expressão da pessoa humana em busca de sentido, em busca de si mesma, é poder ver o sucesso da vida sobre a morte e apesar dela.</p>
+            <p>Ser psicólogo é poder assimilar e compreender diferentes e extensas teorias e ainda permanecer-se aberto ao novo e singular de cada pessoa, é ser capaz de ter muitas convicções e a principal delas é a de que sempre haverá algo de muito novo e de muito precioso a se aprender a cada encontro, a cada dia. Ser psicólogo é poder caminhar pelos vales escuros onde ninguém quer ir e convidar os que por lá se perderam a desfrutar a alegria dos dias ensolarados.”</p>
             <img src="img/detalhe - Copia.png" id="detalhe2">
-            <a class="about-button" target="_blank" href="https://www.instagram.com/psicologa.luanna/">Saiba Mais</a>
+            <div class="center">
+                <a class="about-button" target="_blank" href="https://www.instagram.com/psicologa.luanna/">Saiba Mais</a>
+            </div>
         </section>
         <!-- <section class="contact">
             <div class="contact-border">
@@ -45,6 +50,29 @@
             </div>
         </section> -->
     </main>
+
+    <a id="toTop" href="#home"><i class="fa-solid fa-angle-up"></i></a>
 </body>
+<script>
+    window.addEventListener('scroll', function () {
+        var button = document.getElementById('toTop');
+        if (window.scrollY > 400) {
+            button.style.display = 'block';
+        }
+        else {
+            button.style.display = 'none';
+        }
+    });
+</script>
+<!-- <script>
+    window.addEventListener('scroll', function() {
+        var button = document.getElementById('myButton');
+        if (window.scrollY > 100) {
+            button.style.display = 'block';
+        } else {
+            button.style.display = 'none';
+        }
+    });
+</script> -->
 
 </html>
